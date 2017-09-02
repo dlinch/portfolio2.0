@@ -46,13 +46,13 @@ export default {
         },
         {
           title: 'Bracketer',
-          link: 'https://dlinch.com/projects',
+          link: 'https://github.com/dlinch/bracketer',
           description: 'Bracket all the things.',
           technologies: ['JQuery'],
         },
         {
           title: 'Warble',
-          link: 'https://dlinch.com/projects',
+          link: '#',
           description: 'Under wraps.',
           technologies: ['TBD'],
         },
@@ -65,6 +65,7 @@ export default {
 <style scoped>
 h2 {
   font-family: 'Quicksand', Arial, sans-serif;
+  grid-template: 100%;
 }
 
 .description {
@@ -72,7 +73,7 @@ h2 {
 }
 .project-list {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
 }
 
 li {
@@ -88,6 +89,12 @@ a {
 @media(max-width: 700px) {
   .project-list {
     grid-template: 100% / 100%;
+  }
+}
+
+@media(min-width: 1200px) {
+.project-list{
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   }
 }
 </style>
