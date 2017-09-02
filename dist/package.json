@@ -1,0 +1,10 @@
+{
+ "name": "DerikHomePage",
+ "version": "1.0.0",
+ "description": "Home page for Derik Linch.",
+ "author": "Derik Linch",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
