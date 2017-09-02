@@ -1,5 +1,6 @@
 <template>
   <div class="projects">
+    <back-button></back-button>
     <h2>Projects</h2>
     <ul class="project-list">
       <li v-for="project in projects">

@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h1>Hi there.</h1>
     <p>I'm Derik. If you're reading this, you must be one cool cat.</p>
     <p>I like to build things, so if you need something built, get in contact with me and I can help you out.</p>

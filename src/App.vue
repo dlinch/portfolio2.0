@@ -21,6 +21,23 @@ export default {
   margin-top: 60px;
 }
 
+.back-nav {
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.back-nav:hover {
+  font-size: 1.34rem;
+  color: #297050;
+}
+
+.back-nav:visited {
+  color: #42b983;
+}
+
 .menu {
   -webkit-filter: url("#shadowed-goo");
           filter: url("#shadowed-goo");

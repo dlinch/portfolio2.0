@@ -6,6 +6,11 @@ import router from './router';
 
 Vue.config.productionTip = false;
 
+
+Vue.component('back-button', {
+  template: '<a href="/#/" class="back-nav"><- Back</a>',
+});
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

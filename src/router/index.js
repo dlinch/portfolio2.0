@@ -1,8 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-// import Hello from '@/components/Hello';
-import Projects from '@/components/Projects';
 import Home from '@/components/Home';
+import Projects from '@/components/Projects';
+import Stats from '@/components/Stats';
+import Hobbies from '@/components/Hobbies';
+// import Contact from '@/components/Contact';
+// import TravelJournal from '@/components/TravelJournal'
 
 Vue.use(Router);
 
@@ -17,6 +20,16 @@ export default new Router({
       path: '/projects',
       name: 'Projects',
       component: Projects,
+    },
+    {
+      path: '/stats',
+      name: 'Stats',
+      component: Stats,
+    },
+    {
+      path: '/hobbies',
+      name: 'Hobbies',
+      component: Hobbies,
     },
   ],
 });
