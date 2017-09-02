@@ -5,7 +5,7 @@ import Projects from '@/components/Projects';
 import Stats from '@/components/Stats';
 import Hobbies from '@/components/Hobbies';
 import Contact from '@/components/Contact';
-// import TravelJournal from '@/components/TravelJournal'
+import Journal from '@/components/Journal';
 
 Vue.use(Router);
 
@@ -35,6 +35,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact,
+    },
+    {
+      path: '/journal',
+      name: 'Journal',
+      component: Journal,
     },
   ],
 });

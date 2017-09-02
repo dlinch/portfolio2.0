@@ -63,8 +63,8 @@ export default {
           ref: '/#/contact',
         },
         {
-          title: 'Dogs',
-          ref: '/#/dogs',
+          title: 'Journal',
+          ref: '/#/journal',
         },
       ],
     };
