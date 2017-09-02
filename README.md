@@ -28,4 +28,4 @@ npm test
 ```
 ## Deploy
 
-Build the site, then run `❯❯❯ git subtree push --prefix dist heroku master` to push only the /dist folder to master. These are the minified, built files that are ready to view.
+Build the site, then run `npm deploy` to push only the /dist folder to master. These are the minified, built files that are ready to view.
