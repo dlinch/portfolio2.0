@@ -35,14 +35,12 @@ export default {
       e.preventDefault();
       const emailInput = document.querySelector('#emailVal');
       emailInput.select();
-      debugger;
       try {
         const success = document.execCommand('copy');
         if (!success) {
           emailInput.style.display = 'inline-block';
         }
       } catch (err) {
-        console.log(err);
         emailInput.style.display = 'inline-block';
       }
     },
