@@ -1,23 +1,24 @@
 <template>
   <div class="hobbies">
     <back-button></back-button>
-    <h1>My choice activities are bountiful.</h1>
-    <ul>
-      <li v-for="hobby in hobbies">
-        {{hobby.name}}
-        <div class="description">
-          <p>{{hobby.description}}</p>
-        </div>
+    <h1>My activities are bountiful.</h1>
+    <ul class="hobby-list">
+      <li v-for="(hobby, index) in hobbies">
+        <hobby :hobby="hobby"></hobby>
       </li>
     </ul>
+
   </div>
 </template>
 
 <script>
+import Hobby from '@/components/Hobby';
+
 export default {
   name: 'hobbies',
   data() {
     return {
+      showDescription: false,
       hobbies: [
         {
           name: 'Science Fiction',
@@ -62,11 +63,30 @@ export default {
       ],
     };
   },
+  components: {
+    hobby: Hobby,
+  },
 };
 </script>
 
 <style scoped>
   .description {
     display: none;
+  }
+
+  .hobby-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  li {
+    display: inline-block;
+    padding: 5px 0;
+    margin: 20px 50px;
+    list-style: none;
+  }
+
+  li:hover {
+    cursor: pointer;
   }
 </style>
