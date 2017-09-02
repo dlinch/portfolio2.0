@@ -26,5 +26,6 @@ npm run e2e
 # run all tests
 npm test
 ```
+## Deploy
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Build the site, then run `❯❯❯ git subtree push --prefix dist heroku master` to push only the /dist folder to master. These are the minified, built files that are ready to view.
