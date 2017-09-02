@@ -4,7 +4,7 @@ import Home from '@/components/Home';
 import Projects from '@/components/Projects';
 import Stats from '@/components/Stats';
 import Hobbies from '@/components/Hobbies';
-// import Contact from '@/components/Contact';
+import Contact from '@/components/Contact';
 // import TravelJournal from '@/components/TravelJournal'
 
 Vue.use(Router);
@@ -30,6 +30,11 @@ export default new Router({
       path: '/hobbies',
       name: 'Hobbies',
       component: Hobbies,
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact,
     },
   ],
 });
