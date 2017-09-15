@@ -1,18 +1,12 @@
-<template>
-  <div class="projects">
-    <back-button></back-button>
-    <h2>Projects</h2>
-    <ul class="project-list">
-      <li v-for="project in projects">
-        <a :href="project.link">{{project.title}}</a>
-        <p class="description">{{project.description}}</p>
-        <p >
-          {{project.technologies.join(", ")}}
-        </p>
-      </li>
-
-    </ul>
-  </div>
+<template lang="slm">
+  div class="projects"
+    back-button
+    h2 Projects
+    ul class="project-list"
+      li v-for="project in projects"
+        a :href="project.link" {{project.title}}
+        p class="description" {{project.description}}
+        p {{project.technologies.join(", ")}}
 </template>
 
 <script>

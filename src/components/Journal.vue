@@ -1,9 +1,8 @@
-<template>
-  <div class="journal">
-    <back-button></back-button>
-    <h1>Under Construction</h1>
-    <h4>Check back later.</h4>
-  </div>
+<template lang="slm">
+  div class="journal"
+    back-button
+    h1 Under Construction
+    h4 Check back later.
 </template>
 
 <script>

@@ -1,14 +1,15 @@
-<template>
-  <div class="contact">
-    <back-button></back-button>
-    <h1>Get in touch.</h1>
-    <h3>Click email to copy. Click any other link to navigate away.</h3>
-    <h2><a href='#' @click="emailSlot" @mouseleave="hideTip">Email</a></h2>
-    <input style="position: absolute; left: -1000px; top: -1000px" value="dlinch33@gmail.com" id="emailVal"/>
-    <ul v-for="contact in contacts">
-      <li><h2><a :href="contact.value">{{contact.method}}</a></h2></li>
-    </ul>
-  </div>
+<template lang="slm">
+  div class="contact"
+    back-button
+    h1 Get in touch.
+    h3 Click email to copy. Click any other link to navigate away.
+    h2
+      a href='#' @click="emailSlot" @mouseleave="hideTip" Email
+    input style="position: absolute; left: -1000px; top: -1000px" value="dlinch33@gmail.com" id="emailVal"
+    ul v-for="contact in contacts"
+      li
+        h2
+          a :href="contact.value" {{contact.method}}
 </template>
 
 <script>

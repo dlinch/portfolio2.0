@@ -1,10 +1,8 @@
-<template>
-  <div>
-    <h3 @click="toggle">{{hobby.name}}</h3>
-    <transition name="fade">
-      <p v-if="showHobby">{{hobby.description}}</p>
-    </transition>
-  </div>
+<template lang="slm">
+  div
+    h3 @click="toggle" {{hobby.name}}
+    transition name="fade"
+      p v-if="showHobby" {{hobby.description}}
 </template>
 
 <script>

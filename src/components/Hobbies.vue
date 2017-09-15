@@ -1,14 +1,10 @@
-<template>
-  <div class="hobbies">
-    <back-button></back-button>
-    <h1>My activities are bountiful.</h1>
-    <ul class="hobby-list">
-      <li v-for="(hobby, index) in hobbies">
-        <hobby :hobby="hobby"></hobby>
-      </li>
-    </ul>
-
-  </div>
+<template lang="slm">
+  div class="hobbies"
+    back-button
+    h1 My activities are bountiful.
+    ul class="hobby-list"
+      li v-for="(hobby, index) in hobbies"
+        hobby :hobby="hobby"
 </template>
 
 <script>
