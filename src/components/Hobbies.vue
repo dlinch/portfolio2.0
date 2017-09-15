@@ -73,6 +73,7 @@ export default {
   .hobby-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0;
   }
 
   li {
@@ -82,6 +83,24 @@ export default {
     list-style: none;
     &:hover {
       cursor: pointer;
+    }
+  }
+
+
+  @media(max-width: 700px) {
+
+    h1 {
+      margin-top: 50px;
+    }
+
+    .hobby-list {
+      grid-template: 100% / 100%;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    .hobby-list{
+      grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
   }
 </style>

@@ -69,6 +69,7 @@ h2 {
 .project-list {
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  padding: 0;
 }
 
 li {

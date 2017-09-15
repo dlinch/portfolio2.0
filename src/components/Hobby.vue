@@ -1,5 +1,5 @@
 <template lang="slm">
-  div
+  div.hobby
     h3 @click="toggle" {{hobby.name}}
     transition name="fade"
       p v-if="showHobby" {{hobby.description}}
