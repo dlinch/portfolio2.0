@@ -63,7 +63,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 h2 {
   font-family: 'Quicksand', Arial, sans-serif;
   grid-template: 100%;
@@ -83,7 +83,7 @@ li {
 }
 
 a {
-  color: rgba(73,203, 134, .9);
+  color: rgba(73,203, 134, .9);;
   text-decoration: none;
 }
 

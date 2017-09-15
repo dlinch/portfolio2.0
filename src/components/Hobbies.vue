@@ -69,7 +69,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .description {
     display: none;
   }
@@ -84,9 +84,8 @@ export default {
     padding: 5px 0;
     margin: 20px 50px;
     list-style: none;
-  }
-
-  li:hover {
-    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
   }
 </style>
